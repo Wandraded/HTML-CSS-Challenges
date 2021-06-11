@@ -14,6 +14,11 @@ nav {
   width: 100%;
 }
 
+#logo {
+  border: none;
+}
+
+
 header ul {
   margin: 20px 0 0 0;
   padding: 0;
@@ -39,9 +44,23 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #b3e2f5;
   margin-bottom: 1em;
 }
+
+.giraffe h2,h3 {
+  color: #f4743b;
+}
+
+.giraffe p {
+  color: #beee62;
+}
+
+
+.giraffe p:first-of-type {
+  font-size: large;
+}
+
 
 h1 {
   font-size: 250%;
@@ -64,6 +83,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: large;
+}
+
+button:hover {
+ background-color:green;
 }
 
 footer {
@@ -76,6 +100,24 @@ footer {
 }
 
 .introduction {
+  background: white;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.image-container img:first-of-type {
+  border: solid green 5px;
+  vertical-align: top;
+}
+
+.image-container img:nth-of-type(2) {
+  border: dashed pink 6px;
+  vertical-align: top;
+}
+
+.image-container img:nth-of-type(3) {
+  border: dotted fuchsia 10px;
+  vertical-align: top;
 }
 
 #badge {
@@ -85,13 +127,17 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  -webkit-transition: background-color 2s ease-out;  
+  -moz-transition: background-color 2s ease-out;  
+  -o-transition: background-color 2s ease-out;  
+  transition: background-color 2s ease-out;
 }
 
 #badge:hover {
@@ -108,9 +154,6 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
-}
 
 .tigers {
   background-color: #0b3c49;
@@ -118,12 +161,16 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
   color: #ef6f6c;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +213,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 4px;
 }
 
 .education-container h3,
@@ -180,6 +228,11 @@ footer {
   background-color: #fffffc;
 }
 
+.membership p {
+  max-width: 700px;
+  margin-left: 30%;
+}
+
 .membership h2 {
   color: #ff3f00;
 }
@@ -189,7 +242,10 @@ footer {
 }
 
 /*Programs*/
-
+.programs .div {
+  display: flex;
+  justify-content: space-between;
+}
 .programs .card {
-  display: block;
+  
 }
